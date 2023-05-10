@@ -1,0 +1,8 @@
+<h1>Search Movie Reviews</h1>
+<br>
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+        <label for="name">Movie Name:</label> &nbsp;
+        <input type="text" formControlName="name">
+        <br><br>
+        <button type="submit" [disabled]="!searchForm.valid" class="shift-right">Submit</button>
+</form>
